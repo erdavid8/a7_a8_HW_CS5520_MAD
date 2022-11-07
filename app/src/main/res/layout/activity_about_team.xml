@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutTeamActivity">
+
+    <TextView
+        android:id="@+id/team_name_textView"
+        android:layout_width="149dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/team_member_1_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team_member_1_textView"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/team_member_2_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_name_textView" />
+
+    <TextView
+        android:id="@+id/team_member_2_textView"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/team_member_3_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_member_1_textView" />
+
+    <TextView
+        android:id="@+id/team_member_3_textView"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_member_2_textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

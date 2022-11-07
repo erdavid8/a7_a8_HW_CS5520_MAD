@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StickerSendingActivity">
+
+    <Button
+        android:id="@+id/btn_history"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/history"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="runHistoryActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_sendMessage"
+        app:layout_constraintTop_toBottomOf="@+id/img_ice_cream"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_sendMessage"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:text="@string/send_msg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_history"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_history"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_curr_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/curr_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/curr_username" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/send_to"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_curr_username"
+        app:layout_constraintTop_toTopOf="@+id/tv_showSendTo" />
+
+    <TextView
+        android:id="@+id/curr_username"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:textAlignment="viewStart"
+        android:textColor="#0000FF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_curr_username"
+        app:layout_constraintTop_toBottomOf="@+id/tv_messenger2"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:text="username"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_messenger2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/messenger_window"
+        android:textColor="#0000FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_showSendTo"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:textAlignment="viewStart"
+        android:textColor="#0000FF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/curr_username"
+        app:layout_constraintTop_toBottomOf="@+id/curr_username"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:text="sending to" />
+
+    <ImageView
+        android:id="@+id/img_ice_cream"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:contentDescription="@string/ice_cream_in_a_cone"
+        android:onClick="showIceCream"
+        app:layout_constraintEnd_toStartOf="@+id/img_colorful_balloons"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_cola_drink"
+        app:layout_constraintTop_toBottomOf="@+id/tv_showSendTo"
+        app:srcCompat="@drawable/ice_cream" />
+
+    <ImageView
+        android:id="@+id/img_cola_drink"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="3dp"
+        android:contentDescription="@string/softdrink_in_a_bottle"
+        android:onClick="showColaDrink"
+        app:layout_constraintEnd_toStartOf="@+id/img_ice_cream"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_ball"
+        app:layout_constraintTop_toTopOf="@+id/img_ice_cream"
+        app:srcCompat="@drawable/softdrink" />
+
+    <ImageView
+        android:id="@+id/img_ball"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="3dp"
+        android:contentDescription="@string/basketball_hoops"
+        android:onClick="showBall"
+        app:layout_constraintEnd_toStartOf="@+id/img_cola_drink"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_cola_drink"
+        app:srcCompat="@drawable/basketball" />
+
+    <ImageView
+        android:id="@+id/img_colorful_balloons"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="3dp"
+        android:contentDescription="@string/colorful_balloons"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="showColorfulBalloons"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_ice_cream"
+        app:layout_constraintTop_toTopOf="@+id/img_ice_cream"
+        app:srcCompat="@drawable/balloon"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "297703495380",
+    "firebase_url": "https://team22-a8-stick-it-to-em-default-rtdb.firebaseio.com",
+    "project_id": "team22-a8-stick-it-to-em",
+    "storage_bucket": "team22-a8-stick-it-to-em.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297703495380:android:8492f1463e203c61444d41",
+        "android_client_info": {
+          "package_name": "edu.northeastern.numad22fa_orkhandadashov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297703495380-g6rdnnog1p53n7i2btfck01eif3qv7af.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPp3AL7qLEth1mVtj5F0AGicAWz5QnYWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297703495380-g6rdnnog1p53n7i2btfck01eif3qv7af.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

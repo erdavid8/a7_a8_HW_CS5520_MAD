@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "727828790458",
+    "firebase_url": "https://my-project-11012022-7d3f0-default-rtdb.firebaseio.com",
+    "project_id": "my-project-11012022-7d3f0",
+    "storage_bucket": "my-project-11012022-7d3f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727828790458:android:a371f6d463977c38365683",
+        "android_client_info": {
+          "package_name": "edu.northeastern.numad22fa_orkhandadashov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727828790458-lm0cqqv29me9gl61mqgect9da28r43rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu-rrlh0zCrlvN6boM-zoD4lhbVg-jzng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727828790458-lm0cqqv29me9gl61mqgect9da28r43rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
